@@ -1,14 +1,14 @@
-telebotelebot
+import telebot
 
-TOKEN =  API:8572750379:AAFpzAgYabB6mE4q7L_QGmrQobjPyImY4Zs
+TOKEN = "PUT_YOUR_NEW_TOKEN_HERE"
 
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.reply_to(message, "مرحبا بك في البوت 🤖")
+    bot.reply_to(message, "اهلا بك في البوت 🤖")
 
-@bot.message_handler(func=lambda m: True)
+@bot.message_handler(func=lambda message: True)
 def echo(message):
     bot.reply_to(message, message.text)
 
