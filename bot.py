@@ -1,6 +1,6 @@
-import telebot
+telebotelebot
 
-TOKEN =  "8572750379:AAFX2M1zMOPbwRukw09xMSNvem9gJk4W6cM"
+TOKEN =  API:8572750379:AAFpzAgYabB6mE4q7L_QGmrQobjPyImY4Zs
 
 bot = telebot.TeleBot(TOKEN)
 
